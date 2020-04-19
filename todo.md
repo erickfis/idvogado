@@ -5,7 +5,7 @@
 
 ## Status on 2020/04/20
 
-### Started
+### Devel Cycle 01 started
 
 - create git repo - erick - ok
 - learning Kivy - Erick & Mateus
