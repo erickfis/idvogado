@@ -2,6 +2,17 @@
 
 An android app meant to connect *Employment Law Attorneys* with workers in need. Built with love in Python.
 
+## Installing kivy
+
+In order to contribute, you will need to install kivy in your virtual environment. Please run the following:
+
+    pip install --upgrade pip wheel setuptools
+    pip install kivy
+    pip install docutils pygments pypiwin32 kivy-deps.sdl2 kivy-deps.glew
+    pip install kivy-deps.gstreamer
+    pip install kivy-deps.angle
+    pip install –-upgrade kivy
+
 
 ## Dev team
 
@@ -9,8 +20,9 @@ An android app meant to connect *Employment Law Attorneys* with workers in need.
 
 [Mateus Alberto Ferreira](https://www.linkedin.com/in/mateusalberto/) - mateusalberto@hotmail.co.uk
 
-
 [Italo Marques](https://www.linkedin.com/in/italo-marques-966298b9/) - italo_aas@hotmail.com
+
+[Sarah Ribeiro](https://www.linkedin.com/in/sarah-c-ribeiro/) - sarinhah@gmail.com
 
 
 ## Rules for development
