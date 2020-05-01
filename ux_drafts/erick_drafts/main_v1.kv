@@ -1,0 +1,45 @@
+<MainWindow>:
+    BoxLayout:
+        orientation: 'vertical'
+        padding: 20
+        canvas.before:
+            Color:
+                rgba: (1, 1, 1, .8)
+            Rectangle:
+                size: self.size
+                pos: self.pos
+
+        Label:
+            text: 'iAdogados'
+            bold: True
+            color: 1,1,1,1
+
+
+        Label:
+            text: 'An android app meant to connect Employment Law Attorneys with workers in need. Built with love in Python.'
+            italic: True
+            valign: 'middle'
+            halign: 'center'
+            text_size: self.width-20, self.height-20
+
+
+        BoxLayout:
+            orientation: 'vertical'
+            padding: 10
+            spacing: 10
+            # size_hint_y: None
+            # height: 80
+
+            TextInput:
+                hint_text: 'User name'
+                id: user
+                multiline: False
+
+
+            TextInput:
+                hint_text: 'password'
+                id: password
+                multiline: False
+
+            Button:
+                text: 'Entrar'
