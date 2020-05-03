@@ -11,7 +11,7 @@ Erick Medeiros Anastácio
 
 from kivy.app import App
 from kivy.uix.boxlayout import BoxLayout
-from app.screens import MainScreen
+from app.screens import MainWindow
 
 
 class MainApp(App):
@@ -19,4 +19,4 @@ class MainApp(App):
 
     def build(self):
         """Required build for app."""
-        return MainScreen()
+        return MainWindow()

@@ -10,19 +10,17 @@ Erick Medeiros Anastácio
 """
 
 from kivy.uix.boxlayout import BoxLayout
+from kivy.lang import Builder
+
+# Loading Multiple .kv files
+Builder.load_file('app/screens/welcome.kv')
+Builder.load_file('app/screens/login.kv')
+Builder.load_file('app/screens/main.kv')
 
 
-class MainScreen(BoxLayout):
+class MainWindow(BoxLayout):
     """
     The window definitions.
+
     Comming from kv file.
     """
-    pass
-
-
-class LoginScreen(BoxLayout):
-    """
-    The window definitions.
-    Comming from kv file.
-    """
-    pass
