@@ -1,26 +1,21 @@
 """
-Project iAdvogado
+Project iAdvogado.
 
 Description:
-hello world!
+The main app.
 
 Author:
 Erick Medeiros Anastácio
-2020/05/01
-
+2020/05/03
 """
 
-from kivy.app import App
-from kivy.uix.button import Button
-from kivy.uix.widget import Widget
+from kivy.core.window import Window
+from app import MainApp
 
-
-class TestApp(App):
-    def build(self):
-        return Button(text='Hello World')
-
-TestApp().run()
-
+# set window size and window dpi
+Window.size = (320, 645)
+Window.dpi = 96
 
 if __name__ == '__main__':
-    TestApp().run()
+    app = MainApp()
+    app.run()

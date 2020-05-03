@@ -1,0 +1,10 @@
+"""
+Project iAdvogado
+
+Description:
+init file for {folder} module
+
+Author:
+{author}
+{date}
+"""
