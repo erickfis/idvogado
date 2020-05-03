@@ -1,0 +1,46 @@
+# Project iAdvogado
+#
+# Description:
+# kivy definitions for login screen
+#
+# Author:
+# Erick Medeiros Anastácio
+# 2020/05/01
+
+
+#:import utils kivy.utils
+
+<MainWindow>:
+    orientation: 'vertical'
+    Label:
+        text: 'Frame fixo'
+        bold: True
+        italic: True
+        size_hint_y: .05
+
+    ScreenManager:
+        id: sc_manager
+        Screen:
+            name: 'main_screen'
+            BoxLayout:
+                orientation: 'vertical'
+                Label:
+                    text: 'Main Screen'
+                Button:
+                    text: 'go to Login'
+                    on_release: sc_manager.current = 'log_screen'
+        Screen:
+            name: 'log_screen'
+            BoxLayout:
+                orientation: 'vertical'
+                Label:
+                    text: 'Login Screen'
+                Button:
+                    text: 'go to Welcome'
+                    on_release: sc_manager.current = 'welcome_screen'
+        Screen:
+            name: 'welcome_screen'
+            WelcomeBox:
+                Button:
+                    text: 'go to Main'
+                    on_release: sc_manager.current = 'main_screen'
